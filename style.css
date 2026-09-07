@@ -441,7 +441,7 @@ footer p { margin: 0; }
   .site-header nav a { font-size: 11px; }
   .hero { padding: 48px 17px 58px; gap: 38px; }
   .hero h1 { font-size: 64px; }
-  .hero-visual { min-height: 370px; }
+  .hero-visual { min-height: 0; aspect-ratio: 16 / 9; }
   .hero-caption { flex-direction: column; gap: 3px; }
   .role-strip { grid-template-columns: repeat(2,1fr); }
   .role-strip p { border-bottom: 1px solid var(--line); }
@@ -452,7 +452,7 @@ footer p { margin: 0; }
   .dark .section-number { right: 17px; }
   .section-heading h2 { font-size: 43px; }
   .survey-figure { padding: 8px; }
-  .process-image { min-height: 330px; }
+  .process-image { min-height: 0; aspect-ratio: 16 / 9; }
   .pipeline { grid-template-columns: 1fr; }
   .pipeline article,
   .pipeline article:nth-child(3n),
