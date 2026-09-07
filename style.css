@@ -127,7 +127,8 @@ figure { margin: 0; }
 .hero-visual {
   position: relative;
   overflow: hidden;
-  min-height: 560px;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
   background: #152426;
   border: 1px solid var(--line);
 }
