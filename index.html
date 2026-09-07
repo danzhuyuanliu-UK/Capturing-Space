@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Zhuyuan Liu — CAMERA application: environment capture, Gaussian Splatting, spatial reconstruction and cultural digital twins." />
+  <title>Zhuyuan Liu — Capturing Space · CAMERA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Zhuyuan Liu home">ZL</a>
+    <nav aria-label="Primary navigation">
+      <a href="#capture">Capture</a>
+      <a href="#sacred">Digital Twin</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#documents">Documents</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CAMERA · Studio Engineer Application</p>
+        <h1>Capturing<br />Space</h1>
+        <p class="hero-kicker">From Environmental Scanning to Cultural Digital Twins</p>
+        <p class="hero-statement">
+          I work between architectural survey, real-time spatial media and computational reconstruction:
+          capturing environments as three-dimensional data, testing how those datasets can be inspected,
+          communicated and rebuilt as usable spatial models.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#capture">View Capture Work</a>
+          <a class="button" href="docs/Zhuyuan_Liu_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+          <a class="button" href="docs/Zhuyuan_Liu_Selected_Portfolio.pdf" target="_blank" rel="noopener">Portfolio ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/sacred-intelligence.webp" alt="Spatial capture and digital reconstruction work from Sacred Intelligence" />
+        <div class="hero-caption">
+          <span>Environment Capture</span>
+          <span>3DGS · Spatial Reconstruction · Digital Twin</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="role-strip" aria-label="CAMERA role alignment">
+      <p>Environment capture</p>
+      <p>LiDAR / photogrammetric workflows</p>
+      <p>Gaussian Splatting</p>
+      <p>3D data inspection</p>
+      <p>Digital twin creation</p>
+      <p>Architectural reconstruction</p>
+    </section>
+
+    <section class="section project" id="capture">
+      <div class="section-number">01</div>
+      <div class="section-heading">
+        <p class="eyebrow">Within Katla</p>
+        <h2>Landscape Capture through LiDAR and Gaussian Splatting</h2>
+        <p>
+          Environmental capture developed with Camille in Iceland, using spatial scanning as a way to retain
+          terrain, scale, atmosphere and spatial relationships beyond conventional photographic documentation.
+          The work sits between field capture and spatial media: raw environmental data becomes a navigable,
+          inspectable and reusable representation of place.
+        </p>
+      </div>
+
+      <div class="video-shell">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/g203IbPtsOI"
+          title="Environment capture and scanning reel"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="evidence-grid">
+        <div class="evidence">
+          <p class="evidence-label">Capture</p>
+          <h3>Space as data</h3>
+          <p>Field scanning records geometry and spatial continuity so that the environment can be revisited as a three-dimensional dataset rather than a sequence of still images.</p>
+        </div>
+        <div class="evidence">
+          <p class="evidence-label">Representation</p>
+          <h3>From scan to navigable scene</h3>
+          <p>Gaussian Splatting provides a high-fidelity visual layer for reviewing captured space, communicating environmental character and supporting subsequent reconstruction.</p>
+        </div>
+        <div class="evidence">
+          <p class="evidence-label">Use</p>
+          <h3>Capture as a working model</h3>
+          <p>The objective is not only visualisation: captured environments become references for analysis, modelling, digital-twin workflows and spatial storytelling.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project dark" id="sacred">
+      <div class="section-number">02</div>
+      <div class="section-heading">
+        <p class="eyebrow">Sacred Intelligence</p>
+        <h2>Digital Documentation of Tibetan Buddhist Architecture</h2>
+        <p>
+          The project extends environment capture into cultural heritage. Tibetan Buddhist structures were
+          recorded as Gaussian-splat datasets, then inspected through orthographic projections and translated
+          into cleaner architectural representations. The scan remains evidence; the reconstructed model becomes
+          an editable spatial interpretation.
+        </p>
+      </div>
+
+      <figure class="survey-figure">
+        <img src="assets/tibetan-scan-survey.webp" alt="Four Tibetan Buddhist structures shown as XY, XZ and YZ scan projections" />
+        <figcaption>
+          Four captured structures · orthographic XY / XZ / YZ projections generated directly from Gaussian-splat PLY data.
+        </figcaption>
+      </figure>
+
+      <div class="process-pair">
+        <div class="process-copy">
+          <p class="eyebrow">Scan → Survey → Reconstruction</p>
+          <h3>Turning visually rich capture into usable geometry</h3>
+          <p>
+            Gaussian splats preserve fine appearance but do not automatically describe walls, columns,
+            eaves or structural hierarchy. I therefore treat the dataset as survey evidence: principal axes,
+            silhouettes, height bands and repeated components are extracted first, then rebuilt as modular
+            Rhino geometry.
+          </p>
+          <p>
+            The structures' axial and rotational symmetries make this process efficient. A single calibrated
+            facade can define reusable column, wall-panel, portal, bracket, roof and finial modules, which are
+            mirrored and rotated to reconstruct the complete building.
+          </p>
+        </div>
+        <div class="process-image">
+          <img src="assets/responsive-mural.webp" alt="Sacred Intelligence digital and physical spatial system" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow" id="workflow">
+      <div class="section-number">03</div>
+      <div class="section-heading">
+        <p class="eyebrow">Technical workflow</p>
+        <h2>A capture-to-model pipeline</h2>
+        <p>
+          The useful part of environment capture begins after acquisition. My workflow combines visual review
+          with numerical inspection so that spatial datasets can move from field evidence to architectural,
+          interactive or digital-twin outputs.
+        </p>
+      </div>
+
+      <div class="pipeline" aria-label="Capture workflow">
+        <article>
+          <span>01</span>
+          <h3>Acquire</h3>
+          <p>LiDAR / image-based field capture and environmental scanning.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Reconstruct</h3>
+          <p>Gaussian Splatting and three-dimensional scene reconstruction.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Inspect</h3>
+          <p>PLY export, coordinate analysis, orthographic projection and spatial comparison.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Interpret</h3>
+          <p>Identify axes, levels, envelopes, repeated architectural modules and reliable geometry.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h3>Rebuild</h3>
+          <p>Parametric Rhino reconstruction with scan-derived calibration guides.</p>
+        </article>
+        <article>
+          <span>06</span>
+          <h3>Deploy</h3>
+          <p>Digital twins, spatial media, visualisation, research and cultural documentation.</p>
+        </article>
+      </div>
+
+      <div class="technical-note">
+        <p class="eyebrow">Working principle</p>
+        <blockquote>
+          Scan as evidence. Reconstruction as architectural interpretation.
+        </blockquote>
+        <p>
+          This preserves the richness of the captured environment without confusing noisy scan data with
+          resolved geometry. It also produces models that remain editable, measurable and useful beyond a
+          single visualisation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section documents" id="documents">
+      <div class="section-number">04</div>
+      <div class="section-heading compact">
+        <p class="eyebrow">Supporting material</p>
+        <h2>Documents</h2>
+        <p>Additional evidence of architectural, technical and spatial-media work.</p>
+      </div>
+
+      <div class="document-grid">
+        <a class="document-card" href="docs/Zhuyuan_Liu_CV.pdf" target="_blank" rel="noopener">
+          <span>01</span>
+          <div>
+            <h3>Curriculum Vitae</h3>
+            <p>Architecture, computational workflows, digital media and professional practice.</p>
+          </div>
+          <b>Open ↗</b>
+        </a>
+
+        <a class="document-card" href="docs/Zhuyuan_Liu_Selected_Portfolio.pdf" target="_blank" rel="noopener">
+          <span>02</span>
+          <div>
+            <h3>Selected Portfolio</h3>
+            <p>Selected architectural, interactive and technical work.</p>
+          </div>
+          <b>Open ↗</b>
+        </a>
+
+        <a class="document-card" href="docs/Sacred_Intelligence_Full_Project_Book.pdf" target="_blank" rel="noopener">
+          <span>03</span>
+          <div>
+            <h3>Sacred Intelligence — Full Project Book</h3>
+            <p>Research, system architecture, field documentation, prototypes and cultural context.</p>
+          </div>
+          <b>Open ↗</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-band">
+      <div>
+        <p class="eyebrow">Zhuyuan Liu</p>
+        <h2>Environment capture as a spatial practice.</h2>
+      </div>
+      <a class="button inverted" href="mailto:zhuyuan.liu@outlook.com">zhuyuan.liu@outlook.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Zhuyuan Liu · 2026</p>
+    <p>CAMERA · Environment Capture & Digital Twin Creation</p>
+  </footer>
+</body>
+</html>
