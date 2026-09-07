@@ -311,7 +311,8 @@ figure { margin: 0; }
 .process-copy h3 { font-size: 34px; }
 .process-copy p { margin: 0 0 18px; font-size: 15px; }
 .process-image {
-  min-height: 470px;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
   overflow: hidden;
   background: #101719;
 }
